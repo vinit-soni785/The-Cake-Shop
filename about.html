@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
+    <style>
+    		.font1
+    		{
+    			font-family: 'Alatsi', sans-serif;
+    			margin:0px;
+    			padding: 0px
+    		}
+    		.carousel-inner img {
+			    width: 100%;
+			    height: 20%;
+			}
+			.map-container{
+			position:relative;
+			}
+			.map-container iframe{
+			height:100%;
+			width:100%;
+			position:relative;
+			}
+      p{
+        color:green;
+      }
+      @media screen and (max-width:500px)
+      {
+        p{
+          color:black;
+        }
+      }
+    </style>
+
+  </head>
+ <body>
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+   $('button').click(function()
+  {
+
+    var flag=0;
+    var name=document.getElementById("name").value;
+    var feed=document.getElementById("feed").value;
+    if(name.length==0)
+    {
+      alert("Please Enter your name");
+    }
+    else
+    {
+      flag++;
+    }
+    var email=document.getElementById("Email").value;
+    if(email.length==0)
+    {
+      alert("Please Enter the Email-ID");
+    }
+    else
+    {
+      if( /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/.test(email))
+      {
+        flag++;
+      }
+      else
+      {
+        alert("Invalid Email");
+      }  
+    }
+    if(feed.length==0)
+    {
+      alert("Please Enter your feedback");
+    }else
+    {
+      flag++;
+    }
+    if(flag==3)
+    {
+      alert("Feedback successfull");
+    }  
+    
+    
+  });
+   
+  </script>
+
+  <header>
+  	
+  		<div class="">
+  			<nav class="navbar navbar-expand-sm bg-dark navbar-dark rounded-0">
+			  <!-- Brand -->
+			  <a class="navbar-brand" href="index.html"><img src="logo.png" class="ml-5 mb-2" height="70px" width="150px"></a>
+
+			  <!-- Links -->
+			  <ul class="navbar-nav ml-auto">
+			    <li class="nav-item">
+			      <a class="nav-link" href="index.html" class="active">Home</a>
+			    </li>
+			    <li class="nav-item active">
+			      <a class="nav-link" href="about.html">About Us</a>
+			    </li>
+			    <li class="nav-item">
+			      <a class="nav-link" href="contact.html">Contact Us</a>
+			    </li>
+
+			    <!-- Dropdown -->
+			    <li class="nav-item dropdown">
+			      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+			        Category
+			      </a>
+			      <div class="dropdown-menu">
+			        <a class="dropdown-item" href="#">Cake</a>
+			        <a class="dropdown-item" href="#">Cup Cake</a>
+			      </div>
+			    </li>
+			  </ul>
+			</nav>
+  		</div>
+
+  </header>
+
+ <section>
+
+ <div class="mt-3 mb-3">
+  			<h1 class="text-center text-dark font1 font-weight-bold">About Us</h1>
+  			<hr class=" container">
+ </div>
+<div class="container mt-3">
+  <div>
+    <div class="card bg-light border-0">
+      <div class="card-body text-left">
+      <p class="text-center font-weight-bold pb-2 mb-0" style="text-align:justify;">The Cake Shop is a sweet local family owned bakery located in San Mateo, California.  We pride ourselves with delivering the sweetest treats and cakes to you! All of our cakes and treats are made fresh from scratch with every order. Nothing is ever frozen and we use all natural ingredients.  Great care is taken with each and every order, and decorated to impress. We strive to set new trends and are constantly inspired by our customer's creativity!  Combining our good ol' fashioned scratch baking with fresh ideas push us into creative unchartered cake decorating territory. We promise to leave you satisfied and full of happiness with every bite!</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+</section>
+
+
+<section class="mb-5">
+<div class="mt-3 mb-3">
+  			<h1 class="text-center text-dark font1 font-weight-bold">To Know More</h1>
+  			<hr class=" container">
+ </div>
+
+	<center><div>
+      <video controls="" style="width:700px; height:300px;">
+      <source src="video1.mp4" type="video/mp4" >
+     </video>
+	</div></center>
+</section>
+
+<section>
+ <div class="container-fluid bg-dark text-light">
+ 	<h1 class="text-center text-light font1 font-weight-bold">The Cake Shop</h1>
+ 	<hr class="bg-light" style="height:1px;width:300px;margin-top:5px;">
+ 	<h4 class="text-center font-weight-light" style="top:-10px;position: relative;">Ghatlodia, +91 9726 2036 16</h4>
+ 	<h5 class="text-center font-weight-light pb-2 mb-0">© 2019 Copyright: The Cake Shop </h5>
+</div>
+</section>
+
+</footer>
+ </body>
+</html>

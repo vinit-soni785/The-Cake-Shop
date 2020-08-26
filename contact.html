@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
+    <style>
+    		.font1
+    		{
+    			font-family: 'Alatsi', sans-serif;
+    			margin:0px;
+    			padding: 0px
+    		}
+    		.carousel-inner img {
+			    width: 100%;
+			    height: 20%;
+			}
+			.map-container{
+			position:relative;
+			}
+			.map-container iframe{
+			height:100%;
+			width:100%;
+			position:relative;
+			}
+    </style>
+
+  </head>
+ <body>
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <header>
+  	
+  		<div class="">
+  			<nav class="navbar navbar-expand-sm bg-dark navbar-dark rounded-0">
+			  <!-- Brand -->
+			  <a class="navbar-brand" href="index.html"><img src="logo.png" class="ml-5 mb-2" height="70px" width="150px"></a>
+
+			  <!-- Links -->
+			  <ul class="navbar-nav ml-auto">
+			    <li class="nav-item">
+			      <a class="nav-link" href="index.html" class="active">Home</a>
+			    </li>
+			    <li class="nav-item">
+			      <a class="nav-link" href="about.html">About Us</a>
+			    </li>
+			    <li class="nav-item active">
+			      <a class="nav-link" href="contact.html">Contact Us</a>
+			    </li>
+
+			    <!-- Dropdown -->
+			    <li class="nav-item dropdown">
+			      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+			        Category
+			      </a>
+			      <div class="dropdown-menu">
+			        <a class="dropdown-item" href="#">Cake</a>
+			        <a class="dropdown-item" href="#">Cup Cake</a>
+			      </div>
+			    </li>
+			  </ul>
+			</nav>
+  		</div>
+
+  </header>
+
+ <section>
+
+ <div class="mt-3 mb-3">
+  			<h1 class="text-center text-dark font1 font-weight-bold">Get In Touch</h1>
+  			<hr class=" container">
+ </div>
+<div class="container mt-3">
+  <div class="card-columns">
+    <div class="card bg-light border-0">
+
+      <div class="card-body text-center border-0">
+        <img src="email.png" class="mb-2" style="height:50px;width:50px;">
+        <h5 class="text-center font-weight-bold pb-2 mb-0">vinitsoni785@gmail.com</h5>
+      </div>
+    </div>
+    <div class="card bg-light border-0">
+      <div class="card-body text-center">
+        <img src="call.png" class="mb-2" style="height:50px;width:50px;">
+        <h5 class="text-center font-weight-bold pb-2 mb-0">9726203616</h5>
+      </div>
+    </div>
+    <div class="card bg-light border-0">
+      <div class="card-body text-center">
+        <img src="add.png" class="mb-2" style="height:50px;width:50px;">
+        <h5 class="text-center font-weight-bold pb-2 mb-0">Ghatlodia</h5>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+</section>
+
+
+<section class="mb-5">
+<div class="mt-3 mb-3">
+  			<h1 class="text-center text-dark font1 font-weight-bold">Send Us Message</h1>
+  			<hr class=" container">
+ </div>
+
+	<center><div>
+        <!--Form with header-->
+
+                    <form action="" method="post">
+                        <div class="card border-top border-bottom rounded-0 mb-0">
+                            <div class="card-header p-0">
+                            </div>
+                            <div class="card-body p-3">
+
+                                <!--Body-->
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">Name:<i class="fa fa-user text-info"></i></div>
+                                        </div>
+                                        <input type="text" class="form-control" name="nombre" placeholder="Enter Name" id="name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">Email:<i class="fa fa-envelope text-info"></i></div>
+                                        </div>
+                                        <input type="email" class="form-control" name="email" placeholder="Enter Email" id="Email">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">Message:<i class="fa fa-comment text-info"></i></div>
+                                        </div>
+                                        <textarea class="form-control" placeholder="Enter Message" id="feed"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="text-center">
+                                   <button class="btn btn-info btn-block rounded-0 py-2">Submit</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                    <!--Form with header-->
+	</div></center>
+</section>
+
+  <script type="text/javascript">
+   $('button').click(function()
+  {
+
+    var flag=0;
+    var name=document.getElementById("name").value;
+    var feed=document.getElementById("feed").value;
+    if(name.length==0)
+    {
+      alert("Please Enter your name");
+    }
+    else
+    {
+      flag++;
+    }
+    var email=document.getElementById("Email").value;
+    if(email.length==0)
+    {
+      alert("Please Enter the Email-ID");
+    }
+    else
+    {
+      if( /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/.test(email))
+      {
+        flag++;
+      }
+      else
+      {
+        alert("Invalid Email");
+      }  
+    }
+    if(feed.length==0)
+    {
+      alert("Please Enter your feedback");
+    }else
+    {
+      flag++;
+    }
+    if(flag==3)
+    {
+      alert("Feedback successfull");
+    }  
+    
+    
+  });
+  </script>
+
+ <section>
+<div style="height:30%;width:100%;">
+<!--Google map-->
+<div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+  <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+    style="border:0"></iframe>
+</div>
+</div>
+
+</section>
+
+
+
+<section>
+ <div class="container-fluid bg-dark text-light">
+ 	<h1 class="text-center text-light font1 font-weight-bold">The Cake Shop</h1>
+ 	<hr class="bg-light" style="height:1px;width:300px;margin-top:5px;">
+ 	<h4 class="text-center font-weight-light" style="top:-10px;position: relative;">Ghatlodia, +91 9726 2036 16</h4>
+ 	<h5 class="text-center font-weight-light pb-2 mb-0">© 2019 Copyright: The Cake Shop </h5>
+</div>
+</section>
+
+</footer>
+ </body>
+</html>
